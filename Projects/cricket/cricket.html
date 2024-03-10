@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bat Ball Stumps Game</h1>
+  <button onclick="
+  let randomNumber = Math.random()*3;
+  let computerChoice;
+  if(randomNumber>0 && randomNumber<=1){
+    computerChoice = 'bat';
+  }else if(randomNumber>1 && randomNumber<=2){
+    computerChoice = 'ball';
+  } else{
+    computerChoice = 'Stumps'
+  }
+  let resultMsg;
+  if(computerChoice === 'ball') {
+    resultMsg = 'user won';
+  } else if(computerChoice === 'bat') {
+    resultMsg = `it's a tie`;
+  } else if(computerChoice === 'Stumps') {
+    resultMsg = `computer has won`;
+  }
+
+  alert(`you have chosen bat. computer choice is ${computerChoice} and ${resultMsg}`);
+  
+  
+  
+  
+  ">bat</button>
+  <button onclick="
+   randomNumber = Math.random()*3;
+   
+  if(randomNumber>0 && randomNumber<=1){
+    computerChoice = 'bat';
+  }else if(randomNumber>1 && randomNumber<=2){
+    computerChoice = 'ball';
+  } else{
+    computerChoice = 'Stumps'
+  }
+  
+  if(computerChoice === 'ball') {
+    resultMsg = `it's a tie`;
+  } else if(computerChoice === 'bat') {
+    resultMsg = `computer has won`;
+  } else if(computerChoice === 'Stumps') {
+    resultMsg = `user won`;
+  }
+
+  alert(`you have chosen ball. computer choice is ${computerChoice} and ${resultMsg}`);
+  
+  
+  
+  
+  ">ball</button>
+  <button onclick="
+  randomNumber = Math.random()*3;
+  
+ if(randomNumber>0 && randomNumber<=1){
+   computerChoice = 'bat';
+ }else if(randomNumber>1 && randomNumber<=2){
+   computerChoice = 'ball';
+ } else{
+   computerChoice = 'Stumps'
+ }
+ 
+ if(computerChoice === 'ball') {
+   resultMsg = `computer has won`;
+ } else if(computerChoice === 'bat') {
+   resultMsg = `user won`;
+ } else if(computerChoice === 'Stumps') {
+   resultMsg = `it's a draw`;
+ }
+
+ alert(`you have chosen wicket. computer choice is ${computerChoice} and ${resultMsg}`);">wicket</button>
+  
+</body>
+</html>

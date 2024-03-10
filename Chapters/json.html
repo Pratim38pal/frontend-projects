@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="my-div">this is the div</div>
+  <script>
+    let product = {
+      name:'T-shirt',
+      price: 758,
+
+    }
+    localStorage.setItem('Name','KG Coding');
+    localStorage.setItem('price','56892');
+    console.log(localStorage.getItem('Name'));
+    localStorage.setItem('product',JSON.stringify(product));
+    console.log(localStorage.getItem('product'));
+    localStorage.removeItem('price');
+    let myDate = new Date();
+    console.log(myDate.getTime());
+    console.log(myDate.getFullYear());
+    console.log(myDate.getDay());
+    console.log(myDate.getHours());
+    Console.log(myDate.getMinutes());
+    Console.log(myDate.getMilliseconds());
+    let button = document.createElement('Button');
+    button.innerText = 'click me';
+    document.querySelector('.my-div').appendChild(button);
+   
+
+
+  </script>
+</body>
+</html>
